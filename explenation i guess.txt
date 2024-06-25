@@ -1,7 +1,7 @@
 explenation i guess
 
 
-setup next project (regular)
+setup next project 
 enter azure cli
 login to azure cli
 create a new resource group
@@ -18,22 +18,20 @@ create a webapp
  - aname: mynextjsappforcounter
 setup env var for database
 code auf github pushn
+repo mit azure verbinden
+
+
+psql "host=mypgserverforcounter.postgres.database.azure.com port=5432 dbname=mypgdatabaseforcounter user=mypgadmin password=x73bahgjRFG sslmode=require"
+
+
+az postgres flexible-server connect -n mypgserverforcounter -u mypgadmin -p "x73bahgjRFG" -d mypgdatabaseforcounter
 
 
 
 
 
-az webapp config appsettings set --resource-group myResourceGroup --name my-nextjs-app --settings DATABASE_URL=postgres://myadmin:mypassword@myPostgresServer.postgres.database.azure.com:5432/mydatabase
 
 
-
-
-
-
-
-
-
-this is the table woop woop
 
 CREATE TABLE counter (
     id SERIAL PRIMARY KEY,
