@@ -17,8 +17,7 @@ const Counter = () => {
         const response = await fetch('/api/counter', {
             method: 'POST',
         });
-        const data = await response.json();
-        setCount(data.count);
+        setCount(count++);
     };
 
     return (
