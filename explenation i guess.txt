@@ -1,5 +1,7 @@
 explenation i guess
 
+https://mynextjsappforcounter.azurewebsites.net
+
 
 setup next project 
 enter azure cli
@@ -19,24 +21,4 @@ create a webapp
 setup env var for database
 code auf github pushn
 repo mit azure verbinden
-
-
-psql "host=mypgserverforcounter.postgres.database.azure.com port=5432 dbname=mypgdatabaseforcounter user=mypgadmin password=x73bahgjRFG sslmode=require"
-
-
-az postgres flexible-server connect -n mypgserverforcounter -u mypgadmin -p "x73bahgjRFG" -d mypgdatabaseforcounter
-
-
-
-
-
-
-
-
-CREATE TABLE counter (
-    id SERIAL PRIMARY KEY,
-    count INTEGER DEFAULT 0
-);
-
-INSERT INTO counter (count) VALUES (0);
 

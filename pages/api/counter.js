@@ -34,6 +34,7 @@ const getCount = async () => {
 
 // Funktion zum Inkrementieren des Zählerwerts
 const incrementCount = async () => {
+    console.log('Incrementing count...');
     await ensureTableExists(); // Stellt sicher, dass die Tabelle existiert
     const res = await pool.query('UPDATE counter SET count = count + 1 WHERE id = 1 RETURNING count');
     return res.rows[0].count;
