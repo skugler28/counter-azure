@@ -4,6 +4,8 @@ https://mynextjsappforcounter.azurewebsites.net
 
 
 setup next project 
+setup containers
+modify dockerfile to use node 18
 enter azure cli
 login to azure cli
 create a new resource group
@@ -21,4 +23,5 @@ create a webapp
 setup env var for database
 code auf github pushn
 repo mit azure verbinden
+magic!!!
 
