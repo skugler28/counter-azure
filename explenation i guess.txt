@@ -1,0 +1,44 @@
+explenation i guess
+
+
+setup next project (regular)
+enter azure cli
+login to azure cli
+create a new resource group
+ - rname: counterwoopwoop
+create a new postgresql server
+ - dname: mypgserverforcounter
+ - uname: mypgadmin
+    - pword: x73bahgjRFG
+create a new database
+ - dname: mypgdatabaseforcounter
+create a appserviceplan
+ - sname: myappserviceplanforcounter
+create a webapp
+ - aname: mynextjsappforcounter
+setup env var for database
+code auf github pushn
+
+
+
+
+
+az webapp config appsettings set --resource-group myResourceGroup --name my-nextjs-app --settings DATABASE_URL=postgres://myadmin:mypassword@myPostgresServer.postgres.database.azure.com:5432/mydatabase
+
+
+
+
+
+
+
+
+
+this is the table woop woop
+
+CREATE TABLE counter (
+    id SERIAL PRIMARY KEY,
+    count INTEGER DEFAULT 0
+);
+
+INSERT INTO counter (count) VALUES (0);
+
